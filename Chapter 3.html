@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3</title>
+    
+</head>
+<body>
+    <a href="Chapter 4.html"><h1>Chapter 4 </h1></a> 
+
+    
+    <script>
+        var age = 21; 
+        alert("I am " + age + " years old");
+
+
+        var visitCount= +localStorage.getItem("visitCount");
+        console.log (visitCount);
+        visitCount= ++visitCount;
+
+        localStorage.setItem("visitCount", visitCount);
+        alert ("You have visited this page " + visitCount + " times" );
+
+
+        var birthYear = 2002; 
+        document.write("My birth year is " + birthYear + ".");
+
+
+        var visitorName = "John Doe";
+        var productTitle = "T-shirt";
+        var quantity = 5;
+
+        document.write(visitorName + " ordered " + quantity + " " + productTitle + "(s) on XYZ Clothing store.");
+    </script>
+
+</body>
+</html>
