@@ -10,6 +10,22 @@
 
     <script>
         // Question 1
+        var a = 10;
+
+        document.write("Result:<br>");
+        document.write("The value of a is: " + a + "<br>---------------------------<br><br>");
+
+        document.write("The value of ++a is: " + (++a) + "<br>");
+        document.write("Now the value of a is: " + a + "<br><br>");
+
+        document.write("The value of a++ is: " + (a++) + "<br>");
+        document.write("Now the value of a is: " + a + "<br><br>");
+
+        document.write("The value of --a is: " + (--a) + "<br>");
+        document.write("Now the value of a is: " + a + "<br><br>");
+
+        document.write("The value of a-- is: " + (a--) + "<br>");
+        document.write("Now the value of a is: " + a + "<br><br>");
 
         // Question 2
         var a = 2; 
@@ -24,7 +40,8 @@
           var userName = prompt("Enter your name:");
           alert("Hello, " + userName + "! Welcome to our website!");
 
-        // Task 2: Multiplication Table
+
+        // Question 4
         var num = prompt("Enter a number for the multiplication table:");
         if (num === "" || isNaN(num)) {
             num = 5; // Default value if input is empty or not a number
@@ -35,7 +52,8 @@
             document.write(num + " x " + i + " = " + (num * i) + "<br><br>");
         }
 
-        // Task 3: Calculate and Display Results
+
+        // Question 5
         var subject1 = prompt("Enter name of first subjectsh:");
         var subject2 = prompt("Enter name of second  subject:");
         var subject3 = prompt("Enter name of third  subject:");
