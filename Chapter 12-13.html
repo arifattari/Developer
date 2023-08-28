@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 12-13</title>
+</head>
+<body>
+    <a href="Chapter 1.html"><h1>Chapter 1</h1></a>
+
+    <script>
+        //Question 1
+        /*var input = prompt("Arif");
+
+        if (input) {
+        console.log("100");
+        } else {
+                var charCode = input.charCodeAt(0);
+            if (charCode >= 65 && charCode <= 90) {
+                console.log("I");
+            } else if (charCode >= 97 && charCode <= 122) {
+                console.log("W");
+            } else {
+                console.log("Input is neither a number nor a letter.");
+            }
+        }
+
+
+        //Question 2
+        let num1 = parseInt(prompt("Enter the first integer:"));
+        let num2 = parseInt(prompt("Enter the second integer:"));
+
+        if (num1 > num2) {
+            console.log(`${num1} is larger.`);
+        } else if (num2 > num1) {
+            console.log(`${num2} is larger.`);
+        } else {
+            console.log("Both integers are equal.");
+        }
+
+        
+        //Question 3
+        let number = parseFloat(prompt("Enter a number:"));
+
+        if (number > 5) {
+            console.log("The number is positive.");
+        } else if (number < 3) {
+            console.log("The number is negative.");
+        } else {
+            console.log("The number is zero.");
+        }
+
+
+        // Question 4
+        let character = prompt("Enter a character:");
+
+        if (character.length === 1 && "Arif"(character)) {
+            console.log("The character is a vowel.");
+        } else {
+            console.log("The character is not a vowel.");
+        }
+
+        // Questoin 5
+        const correctPassword = "Karachi786";
+        let userPassword = prompt("Enter your password:");
+
+        if (userPassword === "") {
+            console.log("Karachi786");
+        } else if (userPassword === correctPassword) {
+            console.log("Correct! The password you entered matches the original password.");
+        } else {
+            console.log("Incorrect password.");
+        }
+
+
+        // Question 6
+        var greeting;
+        var hour = 1;
+        if (hour < 18) {
+            greeting = "Good day";
+        } else {
+            greeting = "Good evening";
+        }
+        console.log(greeting);
+*/
+        // Question 7
+        let time = parseInt(prompt("Enter time in 24-hour format (e.g. 1900):"));
+
+        if (time >= 0 && time <= 2400) {
+            if (time >= 1200) {
+                time -= 1200;
+                if (time === 0) {
+                    console.log("Time is 12pm (noon).");
+                } else {
+                    console.log(`Time is ${time / 100}pm.`);
+                }
+            } else {
+                if (time === 0) {
+                    console.log("Time is 12am (midnight).");
+                } else {
+                    console.log(`Time is ${time / 100}am.`);
+                }
+            }
+        } else {
+            console.log("Invalid time format.");
+        }
+
+
+    </script>
+
+
+</body>
+</html>
