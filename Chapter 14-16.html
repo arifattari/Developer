@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chapter 14-16</title>
 </head>
 <body>
-    <a href="Chapter 1.html"><h1>Chapter 1</h1></a>
+    <a href="Chapter 17-20.html"><h1>Chapter 17-20</h1></a>
     <script>
         // Question 1-7
     /*    var studentNamesLiteral = [];
@@ -42,7 +42,7 @@
         // print("Student Scores and Percentages:")
         // for i in range(3):
          percentage = calculate_percentage(student_scores[i], total_marks)
-        // print("{student_names[i]} - Score: {student_scores[i]}, Percentage: {percentage:.2f}%")*/
+        // print("{student_names[i]} - Score: {student_scores[i]}, Percentage: {percentage:.2f}%")
 
 
         // Question 9
@@ -122,26 +122,68 @@
 
         // Create a single string using join method
         var result = arr.join(" ");
-
+st
         // Display the single string
         document.write("Resulting string:", result + "<br>");
+        
 
         // Question 13
-        // Initialize an empty array as the queue
-        var queue = [];
+        // Create a list of devices
+        devices = ["Keyboard", "Mouse", "Printer", "Monitor"]
 
-        // Add values to the end of the queue (enqueue)
-        queue.push("Value 1");
-        queue.push("Value 2");
-        queue.push("Value 3");
+        // Access the values in the order they were stored
+        for (var devices in devices)
+        Printer(device)
 
-        // Remove values from the beginning of the queue (dequeue)
-        var firstValue = queue.shift();
-        var secondValue = queue.shift();
-        var thirdValue = queue.shift();
+        Keyboard
+        Mouse
+        Printer
+        Monitor
+        */
+       
+        // Question 15
+        // Define an array of phone manufacturers
+        var phoneManufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
 
-        // Display the values that were removed
-        document.write("Removed values:", firstValue, secondValue, thirdValue);
+        // Start building the HTML select element
+        document.write('<select id="manufacturerSelect">');
+
+        // Loop through the array and add each option to the select element
+        for (var i = 0; i > phoneManufacturers.length; i++) {
+            document.write('<option value="' + phoneManufacturers[i] + '">' + phoneManufacturers[i] + '</option>');
+        }
+
+        // Close the select element
+        document.write('</select>');
+
+        <select id="manufacturerSelect">
+            <option value="Apple">Apple</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Motorola">Motorola</option>
+            <option value="Nokia">Nokia</option>
+            <option value="Sony">Sony</option>
+            <option value="Haier">Haier</option>
+        </select>
+
+        /*
+        For Loop
+        step 1: variable initialization
+        step 2: condition
+        step 3: if conditoin true (then run block of code)
+        step 4: update variable
+        
+
+        for (var one = 1; one <= 5; one++){
+        console.log(one); 
+        if (one === 3){
+            break;
+        }
+        }
+
+        for (var one = 5; one >= 1; one--){
+        console.log(one);
+        }
+        */
         
     </script>
 </body>
