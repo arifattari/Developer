@@ -1,146 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 14-16</title>
 </head>
+
 <body>
-    <a href="Chapter 17-20.html"><h1>Chapter 17-20</h1></a>
+    <a href="Chapter 17-20.html">
+        <h1>Chapter 17-20</h1>
+    </a>
     <script>
         // Question 1-7
-    /*    var studentNamesLiteral = [];
-        var studentNamesObject = new Array();
-        var stringsArray = ["Arif", "Hadeed", "Hussnain"];
-        var numbersArray = [1, 2, 3, 4, 5, 6, 7, 8];
-        var booleanArray = [true, false, true];
-        var mixedArray = ["Arif", 3, true, null, { name: "John" }];
-        var educationQualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+        /*    var studentNamesLiteral = [];
+            var studentNamesObject = new Array();
+            var stringsArray = ["Arif", "Hadeed", "Hussnain"];
+            var numbersArray = [1, 2, 3, 4, 5, 6, 7, 8];
+            var booleanArray = [true, false, true];
+            var mixedArray = ["Arif", 3, true, null, { name: "John" }];
+            var educationQualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+    
+            // Display the qualifications in the browser
+            document.write("<h2>Qualifications:</h2>");
+            document.write("<ol>");
+            for (var qualification of educationQualifications) {
+                document.write("<li>" + qualification + "</li>");
+            }
+            document.write("</ol>");
+            
+    
+            // Questoin 8
+            // def calculate_percentage(score, total_marks):
+            return (score / total_marks) * 100
+    
+            // Main program
+            // if __name__ == "__main__":
+            // Given student names and scores
+            student_names = ["Arif", "Hadeed", "Hussnain"]
+            student_scores = [320, 230, 480]
+            
+            total_marks = 500
+    
+            // Display scores and percentages
+            // print("Student Scores and Percentages:")
+            // for i in range(3):
+             percentage = calculate_percentage(student_scores[i], total_marks)
+            // print("{student_names[i]} - Score: {student_scores[i]}, Percentage: {percentage:.2f}%")
+    
+    
+            // Question 9
+            // Initialize array with color names
+            var colors = ["Red", "Green", "Blue"];
+    
+            // Display array elements
+            document.write("Initial array:", colors);
+    
+            // a. Add color to the beginning
+            var newColorBeginning = prompt("Enter a color to add to the beginning:");
+            colors.unshift(newColorBeginning);
+            document.write("Array after adding to the beginning:", colors + "<br>");
+    
+            // b. Add color to the end
+            var newColorEnd = prompt("Enter a color to add to the end:");
+            colors.push(newColorEnd);
+            document.write("Array after adding to the end:", colors + "<br>");
+    
+            // c. Add two colors to the beginning
+            colors.unshift("Orange", "Yellow");
+            document.write("Array after adding two colors to the beginning:", colors + "<br>");
+    
+            // d. Delete the first color
+            colors.shift();
+            document.write("Array after deleting the first color:", colors + "<br>");
+    
+            // e. Delete the last color
+            colors.pop();
+            document.write("Array after deleting the last color:", colors + "<br>");
+    
+            // f. Add color at a specific index
+            var indexToAdd = prompt("Enter the index to add a color:");
+            var colorToAdd = prompt("Enter the color to add:");
+            colors.splice(indexToAdd, 0, colorToAdd);
+            document.write("Array after adding color at index:", colors + "<br>");
+    
+            // g. Delete colors at a specific index
+            var indexToDelete = prompt("Enter the index to start deleting colors:");
+            var numToDelete = prompt("Enter the number of colors to delete:");
+            colors.splice(indexToDelete, numToDelete);
+            document.write("Array after deleting colors from index:", colors + "<br>");
+    
+            // Question 10
+    
+            // Initialize array with student scores
+            var studentScores = [320, 230, 480, 120,];
+    
+            // Display initial array
+            document.write("Initial array of student scores:", studentScores + "<br>");
+    
+            // Sort the array in ascending order
+            studentScores.sort(function(a, b) {
+            return a - b;
+            });
+    
+            // Display sorted array
+            document.write("Array after sorting in ascending order:", studentScores + "<br><br>");
+    
+    
+    
+            // Question 11
+            // Initialize array with city names
+            var cities = ["Karachi", "Lahore", "Quetta", "Peshawar", "Islamabad"];
+            document.write("Cities list:" + "<br>" + cities + "<br>")
+    
+            // Initialize selectedCities array and copy elements
+            var selectedCities = cities.slice(1, 4); // Copies elements at indices 1, 2, and 3
+    
+            // Display selectedCities array
+            document.write("Selected cities list:", selectedCities + "<br><br>");
+    
+    
+            // Question 12
+            // Initialize array
+            var arr = ["This", "is", "my", "cat"];
+    
+            // Create a single string using join method
+            var result = arr.join(" ");
+    st
+            // Display the single string
+            document.write("Resulting string:", result + "<br>");
+            
+    
+            // Question 13
+            // Create a list of devices
+            var 
+            devices = ["Keyboard", "Mouse", "Printer", "Monitor"]
+    
+            // Access the values in the order they were stored
+            for (var devices in devices)
+            Printer(device)
+    
+            Keyboard
+            Mouse
+            Printer
+            Monitor
+            */
 
-        // Display the qualifications in the browser
-        document.write("<h2>Qualifications:</h2>");
-        document.write("<ol>");
-        for (var qualification of educationQualifications) {
-            document.write("<li>" + qualification + "</li>");
-        }
-        document.write("</ol>");
-        
-
-        // Questoin 8
-        // def calculate_percentage(score, total_marks):
-        return (score / total_marks) * 100
-
-        // Main program
-        // if __name__ == "__main__":
-        // Given student names and scores
-        student_names = ["Arif", "Hadeed", "Hussnain"]
-        student_scores = [320, 230, 480]
-        
-        total_marks = 500
-
-        // Display scores and percentages
-        // print("Student Scores and Percentages:")
-        // for i in range(3):
-         percentage = calculate_percentage(student_scores[i], total_marks)
-        // print("{student_names[i]} - Score: {student_scores[i]}, Percentage: {percentage:.2f}%")
-
-
-        // Question 9
-        // Initialize array with color names
-        var colors = ["Red", "Green", "Blue"];
-
-        // Display array elements
-        document.write("Initial array:", colors);
-
-        // a. Add color to the beginning
-        var newColorBeginning = prompt("Enter a color to add to the beginning:");
-        colors.unshift(newColorBeginning);
-        document.write("Array after adding to the beginning:", colors + "<br>");
-
-        // b. Add color to the end
-        var newColorEnd = prompt("Enter a color to add to the end:");
-        colors.push(newColorEnd);
-        document.write("Array after adding to the end:", colors + "<br>");
-
-        // c. Add two colors to the beginning
-        colors.unshift("Orange", "Yellow");
-        document.write("Array after adding two colors to the beginning:", colors + "<br>");
-
-        // d. Delete the first color
-        colors.shift();
-        document.write("Array after deleting the first color:", colors + "<br>");
-
-        // e. Delete the last color
-        colors.pop();
-        document.write("Array after deleting the last color:", colors + "<br>");
-
-        // f. Add color at a specific index
-        var indexToAdd = prompt("Enter the index to add a color:");
-        var colorToAdd = prompt("Enter the color to add:");
-        colors.splice(indexToAdd, 0, colorToAdd);
-        document.write("Array after adding color at index:", colors + "<br>");
-
-        // g. Delete colors at a specific index
-        var indexToDelete = prompt("Enter the index to start deleting colors:");
-        var numToDelete = prompt("Enter the number of colors to delete:");
-        colors.splice(indexToDelete, numToDelete);
-        document.write("Array after deleting colors from index:", colors + "<br>");
-
-        // Question 10
-
-        // Initialize array with student scores
-        var studentScores = [320, 230, 480, 120,];
-
-        // Display initial array
-        document.write("Initial array of student scores:", studentScores + "<br>");
-
-        // Sort the array in ascending order
-        studentScores.sort(function(a, b) {
-        return a - b;
-        });
-
-        // Display sorted array
-        document.write("Array after sorting in ascending order:", studentScores + "<br><br>");
-
-
-
-        // Question 11
-        // Initialize array with city names
-        var cities = ["Karachi", "Lahore", "Quetta", "Peshawar", "Islamabad"];
-        document.write("Cities list:" + "<br>" + cities + "<br>")
-
-        // Initialize selectedCities array and copy elements
-        var selectedCities = cities.slice(1, 4); // Copies elements at indices 1, 2, and 3
-
-        // Display selectedCities array
-        document.write("Selected cities list:", selectedCities + "<br><br>");
-
-
-        // Question 12
-        // Initialize array
-        var arr = ["This", "is", "my", "cat"];
-
-        // Create a single string using join method
-        var result = arr.join(" ");
-st
-        // Display the single string
-        document.write("Resulting string:", result + "<br>");
-        
-
-        // Question 13
-        // Create a list of devices
-        devices = ["Keyboard", "Mouse", "Printer", "Monitor"]
-
-        // Access the values in the order they were stored
-        for (var devices in devices)
-        Printer(device)
-
-        Keyboard
-        Mouse
-        Printer
-        Monitor
-        */
-       
         // Question 15
         // Define an array of phone manufacturers
         var phoneManufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
@@ -184,7 +189,22 @@ st
         console.log(one);
         }
         */
-        
+
+        var arr = []
+        for (var i = 0; i <= 10; i++) {
+            arr.push(i)
+            var nestedArr = []
+            for (var j = 0; j = 2; j++) {
+                nestedArr.push(j)
+
+            }
+            arr.push(nestedArr)
+        }
+console.log (arr);
+
+
+
     </script>
 </body>
+
 </html>

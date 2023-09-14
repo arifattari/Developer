@@ -6,7 +6,7 @@
     <title>Chapter 17-20</title>
 </head>
 <body>
-    <a href="Chapter 1.html"><h1>Chapter 1</h1></a>
+    <a href="Chapter 1.html"><h1>Chapter 21-25</h1></a>
 
     <script>
         // Question 1-2
@@ -18,7 +18,6 @@
         [2, 1, 0, 1]
         ];
 
-        // Display the matrix using document.write
         document.write("<table ='1'>");
         for (var i = 0; i < matrix.length; i++) {
             document.write("<tr>");
@@ -41,16 +40,16 @@
         document.write("</ul>");
 
         // Question 4
-        // Prompt the user for the number and table length
+
         var number = parseInt(prompt("Enter the number for the multiplication table:"));
         var length = parseInt(prompt("Enter the length of the multiplication table:"));
 
-        // Check if the inputs are valid numbers
+
         if (!isNaN(number) && !isNaN(length)) {
             document.write("<h2>Multiplication Table for " + number + " up to " + length + ":</h2>");
             document.write("<table ='1'>");
 
-            // Generate and display the multiplication table
+
             for (var i = 1; i <= length; i++) {
                 var result = number * i;
                 document.write("<tr>");
@@ -75,7 +74,7 @@
         }
 
         document.write("</ul>" + "<br>");
-        // Using a for loop to print each fruit along with its index
+
         for (var i = 0; i < fruits.length; i++) {
             document.write("Element at index " + i + " is " + fruits[i] + "<br>");
 }
@@ -88,28 +87,24 @@
         }
         document.write("Counting:" + "<br><br>" , counting.join(', ') + "<br><br>");
 
-        // b. Reverse counting: 10 to 1
         var reverseCounting = [];
         for (var j = 10; j >= 1; j--) {
             reverseCounting.push(j);
         }
         document.write("Reverse counting:" + "<br><br>", reverseCounting.join(', ') + "<br><br>");
 
-        // c. Even numbers: 0 to 20, increment by 2
         var even = [];
         for (var k = 0; k <= 20; k += 2) {
             even.push(k);
         }
         document.write("Even:" + "<br><br>", even.join(', ') + "<br><br>");
 
-        // d. Odd numbers: 1 to 19, increment by 2
         var odd = [];
         for (var l = 1; l <= 19; l += 2) {
             odd.push(l);
         }
         document.write("Odd:" + "<br><br>", odd.join(', ') + "<br><br>");
 
-        // e. Series: 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k
         var series = [];
         for (var m = 1; m <= 10; m++) {
             series.push(2 * m + "k");
@@ -120,7 +115,6 @@
         // Question 7
         var A = ["cake", "apple pie", "cookie", "chips", "patties"];
 
-        // Function to search for an item in the array
         function searchItem(item) {
             for (var i = 0; i < A.length; i++) {
                 if (A[i] === item) {
@@ -130,10 +124,8 @@
             return false;
         }
 
-        // Prompt the user for input
         var userInput = prompt("Enter an item to search for:");
 
-        // Check if the item is found and display a message
         if (searchItem(userInput)) {
             alert(userInput + " is available in our bakery");
         } else {
@@ -143,43 +135,37 @@
         // Question 8
         var A = [24, 53, 78, 91, 12];
 
-        // Initialize a variable to store the largest number, starting with the first element
         var largestNumber = A[0];
 
-        // Loop through the array to find the largest number
         for (var i = 1; i < A.length; i++) {
             if (A[i] > largestNumber) {
                 largestNumber = A[i];
             }
         }
 
-        // Display the largest number
         document.write("Array items: " + A + "<br>");
         document.write("The largest number in the array is: " + largestNumber + "<br>");
 
         // Question 9
         var A = [24, 53, 78, 91, 12];
 
-        // Initialize a variable to store the smallest number, starting with the first element
         var smallestNumber = A[0];
 
-        // Loop through the array to find the smallest number
         for (var i = 1; i < A.length; i++) {
             if (A[i] < smallestNumber) {
                 smallestNumber = A[i];
             }
         }
 
-        // Display the smallest number
         document.write("Array items: " + A + "<br>");
         document.write("The smallest number in the array is: " + smallestNumber + "<br>");
     
 
         // Question 10
         for (var i = 1; i <= 100; i++) {
-        // Check if the current number is a multiple of 5
+  
         if (i % 5 === 0) {
-        // If it is, print the number
+
         document.write(i , (', '));
     }
 }
