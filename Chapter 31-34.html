@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 31-34</title>
+</head>
+<body>
+    <a href="Chapter 1.html"><h1>Chapter 1</h1></a>
+
+
+    <script>
+        // Question 1
+        var currentday = new Date();
+        document.write(Date() + "<br>");
+
+
+        // Question 2
+        var currentDate = new Date();
+
+        var currentMonthIndex = currentDate.getMonth();
+        var monthNames = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+        ];
+
+        var currentMonthName = monthNames[currentMonthIndex];
+
+        document.write("The current month is: " + currentMonthName + "<br>");
+
+
+        
+        // Question 3
+        var dayNames =
+        ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        var currentday = dayNames[currentday.getDay()];
+
+        document.write(`The current day is: ${currentday}.` + "<br>");
+
+        
+        // Question 4
+        var currentDate = new Date();
+        var currentDayIndex = currentDate.getDay();
+
+        if (currentDayIndex === 6 || currentDayIndex === 4) {
+            document.write("It's Fun day");
+        } else {
+            document.write("It's not Fun day" + "<br>");
+        }
+
+        // Question 5
+        var currentDate = new Date();
+
+        var currentDayOfMonth = currentDate.getDate();
+
+        if (currentDayOfMonth < 16) {
+            document.write("First fifteen days of the month");
+        } else {
+            document.write("Last days of the month");
+        }   
+
+
+    
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

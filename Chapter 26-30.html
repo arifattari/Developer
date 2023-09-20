@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 26-30</title>
+</head>
+<body>
+    <a href="Chapter 31-34.html"><h1>Chapter 31-34</h1></a>
+
+
+    <script>
+
+      /*
+        // Question 1
+      var num = prompt ('please ');
+      if(Math.ceil(Math.random()*2)===2){
+      var roundValue = Math.round(num);
+      var floorValue = Math.floor(num);
+      var ceilValue = Math.ceil(num);
+      
+         
+      document.write("<h2>Number: " + num + "</h2>");
+      document.write("<h2>Round Value: " + roundValue + "</h2>");
+      document.write("<h2>Floor Value: " + floorValue + "</h2>");
+      document.write("<h2>Ceil Value: " + ceilValue + "</h2>");
+    } else {
+      document.write("<h2>Please enter a valid positive integer.</h2>");
+}
+
+
+     // Question 2
+     var num = prompt ('please ');
+      if(Math.ceil(Math.random()*2)===2){
+      var roundValue = Math.round(num);
+      var floorValue = Math.floor(num);
+      var ceilValue = Math.ceil(num);
+      
+         
+      document.write("<h2>Number: " + num + "</h2>");
+      document.write("<h2>Round Value: " + roundValue + "</h2>");
+      document.write("<h2>Floor Value: " + floorValue + "</h2>");
+      document.write("<h2>Ceil Value: " + ceilValue + "</h2>");
+    } else {
+      document.write("<h2>Please enter a valid positive integer.</h2>");
+    }
+
+
+     // Question 3
+    var userInput = prompt("Enter a number:");
+
+    var number = parseFloat(userInput);
+
+    if (!isNaN(number)) {
+      var absoluteValue = Math.abs(number);
+
+      document.write(`The absolute value of ${number} is ${absoluteValue}`);
+    } else {
+      document.write("Invalid input. Please enter a valid number.");
+    }
+
+    
+     // Question 4
+    var diceValue = Math.floor(Math.random() * 6) + 1;
+
+    document.write("<h2>The dice rolled: " + diceValue + "</h2>");
+
+
+     // Question 5
+    var num = prompt("Enter a number")
+    var coinTossValue = Math.random();
+
+    var coinResult = "";
+    if (coinTossValue <= 0.5 ) {
+      coinResult = "Heads";
+    } else {
+      coinResult = "Tails";
+    }
+    document.write("<h2>The coin toss resulted in: " + coinResult + "</h2>");
+
+
+
+       // Question 6
+      const randomNum = Math.floor(Math.random() * 100) + 1;
+
+      document.write("<h2>Random number between 1 and 100: " + randomNum + "</h2>");
+
+
+      // Question 7
+
+      // Get user input for weight
+      var userInput = prompt("Enter your weight (e.g., 50, 50kgs, 50.2kgs, 50.2kilograms):");
+
+      // Function to parse and extract the weight from user input
+      function parseWeight(input) {
+        var regex = /(\d+(\.\d+)?)\s*(kgs|kilograms)?/i;
+        var matches = input.match(regex);
+
+        if (matches && matches[1]) {
+          return parseFloat(matches[1]);
+        } else {
+          return null;
+        }
+      }
+      var weight = parseWeight(userInput);
+
+      if (weight !== null && !isNaN(weight)) {
+        document.write("<h2>Your weight is: " + weight + " kgs</h2>");
+      } else {
+        document.write("<h2>Invalid input. Please enter a valid weight.</h2>");
+      }
+*/
+
+      // Question 8
+      var secretNumber = Math.floor(Math.random() * 10) + 1;
+      var userGuess = prompt("Guess the secret number (between 1 and 10):");
+
+      if (!isNaN(userGuess)) {
+        var guess = parseInt(userGuess);
+
+        if (guess === secretNumber) {
+          document.write("Congratulations! You guessed the secret number: " + secretNumber);
+        } else {
+          document.write("Sorry, the secret number was: " + secretNumber);
+        }
+      } else {
+        document.write("Invalid input. Please enter a valid number.");
+      }
+
+
+
+    </script>
+</body>
+</html>

@@ -6,7 +6,7 @@
     <title>Chapter 21-25</title>
 </head>
 <body>
-    <a href="Chapter 1.html"><h1>Chapter 1</h1></a>
+    <a href="Chapter 26-30.html"><h1>Chapter 26-30</h1></a>
 
 
 
@@ -70,7 +70,7 @@
         var fullName = firstName.concat(" ", lastName);
 
         alert("Hello, " + fullName + "!");
-*/
+
 
         // Question 7
 
@@ -110,6 +110,166 @@
 
         document.write("User input: " + userInput + "<br>");
         document.write("Upper case: " + uppercaseInput + "<br><br>");
+        
+
+        
+        // Question 11
+      
+        function toTitleCase(input) {
+         return input.charAt(0).toUpperCase() + input.slice(1).toLowerCase();
+         }
+
+        var userInput = prompt("Enter a word:");
+
+        if (userInput !== null) {
+        var titleCaseInput = toTitleCase(userInput);
+
+        document.write("User input:", userInput + "<br>");
+        document.write("Title case:", titleCaseInput + "<br><br>");
+        } else {
+            document.write("No input provided.");
+        }
+
+
+        //  Question 12
+        var num = 35.36;
+
+        var numAsString = num.toString().replace('.', '');
+
+        document.write("Number: " + num + "<br>");
+        document.write("Result: " + numAsString + "<br><br>");
+
+
+        // uestion 13
+        
+        function containsSpecialSymbol(username) {
+        var specialSymbols = ['@', '.', ',', '!'];
+        for (var i = 0; i < username.length; i++) {
+            if (specialSymbols.includes(username[i])) {
+            return true;
+            }
+        }
+        return false;
+        }
+
+        var username = prompt("Enter a username:");
+
+        if (username === null) {
+        document.write("No username provided.");
+        } else if (containsSpecialSymbol(username)) {
+        document.write("Username contains special symbols. Please enter a valid username.");
+        } else {
+        document.write("Username is valid:", username + "<br><br>");
+        }
+
+
+        // uestion 14
+        const items = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+        function searchItem(itemName) {
+        for (var i = 0; i < items.length; i++) {
+            if (items[i].toLowerCase() === itemName.toLowerCase()) {
+            return true;
+            }
+        }
+        return false;
+        }
+
+        var userInput = prompt("Enter an item to search for:");
+
+        if (userInput === null) {
+            document.write("No item entered.");
+        } else {
+        var itemFound = searchItem(userInput);
+
+        if (itemFound) {
+            document.write(`${userInput} is found in the list.` + "<br>");
+        } else {
+            document.write(`${userInput} is not found in the list.` + "<br><br>");
+        }
+        }
+
+
+         // Question 15
+        let password = prompt("create a password");
+
+      let isOneNum = false;
+      let ischar = false;
+      let isFirstNoNum = false;
+      let isSixCharLong = false;
+
+      for (var i = 0; i < 1; i++) {
+        for (var j = 0; j < password.length; j++) {
+          if (
+            (password[j] >= "a" && password[j] <= "z") ||
+            (password[j] >= "A" && password[j] <= "Z")
+          ) {
+            ischar = true;
+          }
+
+          if (isNaN(Number(password[0]))) isFirstNoNum = true;
+
+          if (!isNaN(Number(password[j]))) isOneNum = true;
+        }
+        if (password.length >= 6) isSixCharLong = true;
+        if (isOneNum && ischar && isFirstNoNum && isSixCharLong)
+          alert("aweosome password is perfect");
+
+        if (isOneNum === false) alert("Must be one Number in Password");
+        if (isFirstNoNum === false)
+          alert(
+            `Entered password: ${password}\nPassword can not begin with a Number\nPlease enter a valid password`
+          );
+        if (ischar === false) alert("Must be one character in password");
+
+        if (isSixCharLong === false) alert("Password Must be 6 character Long");
+        //  console.log(isOneNum,ischar,isFirstNoNum)
+      }
+
+      
+
+            // Question 16
+            var university = "University of Karachi";
+
+            var universityArray = university.slice(" ");
+            for (var i = 0; i < universityArray.length; i++) {
+              document.write(universityArray[i] + "<br><br>"");
+            }
+
+
+
+        // Question 17
+        var userInput = prompt("Enter a string:");
+
+        if (userInput === null) {
+          document.write("No input provided.");
+        } else {
+          var lastCharacter = userInput.charAt(userInput.length - 1);
+
+          document.write("User input: " + userInput + "<br>");
+          document.write("Last character of input: " + lastCharacter + "<br><br>");
+        }
+
+*/
+
+        
+        // Question 18
+      var str = "The quick brown fox The jumps the over the the lazy dog";
+      var counter = 0;
+      // let strArr = str.split(" ");
+
+      for (var i = 0; i < str.length; i++) {
+        // if (strArr[i] === "the" || strArr[i] === "The") {
+        //   counter++;
+        // }
+        if (str.slice(i, i + 3) === "the" || str.slice(i, i + 3) === "The") {
+          counter++;
+        }
+      }
+
+      alert(`Text: ${str}\nThere are ${counter} occurrence(s) of word 'the'`);
+      
+
     </script>
 </body>
-</html>
+</html>                                                                                                                     
