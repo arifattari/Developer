@@ -27,10 +27,133 @@
 
         console.log(str.replaceAll("Ak", ""));
 
-*/
+
         var h1 = document.querySelector('h1');
         console.log(h1.innerHTML);
+*/
+
+        /*
+        Chapter 35-38
+        Functions
+        1. debugger
+        2. Function syntax
+          - Function keyword
+          - Function name
+          - Function round brackets
+          - Function parameters in round brackets
+          separated by coma
+          - Function body or block
+          - Function body code
+          - Function return somthing
+        3. function call with arguement separated by coma
+        4. save 
+        5. 
         
+
+
+    // function add(a,b){
+    //    var addition = a + b;
+    //    return addition;
+    // }
+
+    // var result = add(5, 9);
+    // console.log(result);
+
+
+     function add(firstName,lastName, birthYear){
+        var addition = firstName + " " + lastName;
+        var currentYear = new Date().getFullYear();
+        var age = currentYear - birthYear
+        return [addition, age];
+     }
+
+     var fullName = add("Muhammad", "Arif" , 2002);
+     console.log(fullName);
+
+
+    function capt(firstName, lastName){
+        var a = firstName[0].toUpperCase()+firstName.slice(1).toLowerCase()
+        + " " + lastName[0].toUpperCase()+lastName.slice(1).toLowerCase()
+        return a
+    }
+    console.log(capt("muhammad", "arif"));
+
+
+
+    function table(T , L){
+        var arr = []
+        for(var i = 1; 1<= L; i++){
+            arr.push(`$(T) X $(i) = $(T * i)`)
+        }
+        return arr.join('<br>')
+
+    }
+
+    document.write(table(prompt('table'),prompt('table lenght')))
+
+*/
+
+
+/* 
+    1. global scop
+    1. function scop
+    1. block  scop
+
+    code run process
+    1. go thruogh    
+    2. execution
+
+
+
+
+
+    var teacher = "a";
+
+    if(true){
+        var teacher = "c";
+    }
+
+    console.log(teacher);
+
+
+
+
+    var now = new Date();
+     var theHr = now.getHours();
+    var theMin = now.getMinutes();
+    alert("time: " + theHr + ":" + theMin);
+*/
+
+
+/*
+    Chapter 39-40
+    1. switch
+*/
+
+    function isOddOrEven(nom) {
+        if (num % 2 === 0) return "Even";
+        else return "Odd";
+    }
+
+    
+        switch (1 % 2){
+            case 0:
+            console.log("Even");
+            break
+            default:
+            console.log("Odd");
+        }
+
+
+        
+        switch ("Arif"){
+            case 0:
+            console.log("Even");
+            break
+            default:
+            console.log("Odd");
+        }
+     
 
     </script>
 </body>
